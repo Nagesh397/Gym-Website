@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nagesh's fitness</title>
+
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Rampart+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* css reset */
+    body {
+        font-family: 'Lalezar', cursive;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg');
+        /* height: 4554px; */
+        color: white;
+    }
+
+    .left {
+        position: absolute;
+        left: 40px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid red; */
+
+
+    }
+
+    .left img {
+        width: 134px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        text-align: center;
+        line-height: 23px;
+        font-size: 21px;
+    }
+
+    .mid {
+        display: block;
+        width: 34%;
+        margin: 29px auto;
+        /* border: 2px solid green; */
+
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 43px;
+        /* display: inline-block; */
+        /* border: 2px solid yellow; */
+    }
+
+    /* .navbar{
+        display: inline-block;
+    } */
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+    }
+
+    .btn {
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        font-size: 18px;
+        border-radius: 10px;
+        cursor: pointer;
+
+    }
+
+    .btn:hover {
+        background-color: rgb(192, 157, 157);
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 155px 88px;
+        padding: 40px;
+        width: 30%;
+        border-radius: 28px;
+    }
+
+    .form_group input {
+        font-family: 'Lalezar', cursive;
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display:block;
+        width:84%;
+        margin:18px auto;
+        padding:10px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/gym.png" alt="">
+            <div>Nagesh Fitness</div>
+
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li> <a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness caculator</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us now</button><button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of kundapura now</h1>
+        <!-- we assumed that every datas are going to the noaction.php and that datas are handle by any backend developer -->
+        <form action="noaction.php">
+            <div class="form_group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form_group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form_group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form_group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form_group">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <div class="form_group">
+                <input type="text" name="" placeholder="Enter your Phone number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
